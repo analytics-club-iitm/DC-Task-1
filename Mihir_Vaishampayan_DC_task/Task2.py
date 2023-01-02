@@ -14,9 +14,10 @@ class pair_search:
     def count(self):
         for i in range(0,self.leng,1):
             for j in range(0, self.leng, 1):
-                if(self.arr[i]+self.arr[j]==self.key):
-                    self.dict[self.index]=[i, j]
-                    self.index=self.index+1
+                if(j!=i):
+                    if(self.arr[i]+self.arr[j]==self.key):
+                        self.dict[self.index]=[i, j]
+                        self.index=self.index+1
         
         
 C1=pair_search()
