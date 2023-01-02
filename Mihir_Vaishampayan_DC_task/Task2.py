@@ -22,4 +22,4 @@ class pair_search:
 C1=pair_search()
 C1.getdata()
 C1.count()
-print(C1.dict
+print(C1.dict)
