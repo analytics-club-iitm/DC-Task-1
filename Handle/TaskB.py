@@ -15,7 +15,7 @@ nums = list(map(int,input().split()))
 print('The list is:', nums)
 #for k in range(val):
  #   nums.append(int(input()))
-
+print(s.x)
 print(s.find(targ,nums))
 
 
