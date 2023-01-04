@@ -1,0 +1,24 @@
+class My_Class:
+    def func(self):
+        y=[]
+        dictionary={}
+        print("When done inputting integers, input -1")
+        a=int(input("Enter integer: "))
+        count=0
+        while (a)!=-1:
+            y.append(a)
+            a=int(input("Enter integer: "))
+            count+=1
+            
+        b=int(input("Enter the target sum: "))
+        for i in range(count):
+            for j in range(count):
+                if ((y[i]+y[j])==b):
+                    k=i;
+                    dictionary[k]=[i, j]
+            j=0
+        print(dictionary)
+
+c1=My_Class()
+c1.func()
+            
