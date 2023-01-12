@@ -1,0 +1,17 @@
+import random
+import math 
+
+y=[]; 
+y_cap=[]; 
+
+for i in range(100): 
+  y_cap.append(random.uniform(0,1)) 
+  y.append(random.randint(0,1)) 
+
+O=0; 
+
+for i in range(0,100,1): 
+  O=O + ( y[i]*math.log2(y_cap[i]) + (1-y[i])*math.log2((1.0-y_cap[i])) ) 
+
+O=(-1*O) / 100.0 
+print(O)
